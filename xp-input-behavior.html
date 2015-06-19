@@ -714,6 +714,8 @@ This behavior is used to add input capabilities on a custom element.
 
             // Focusing
             if (self.autoFocus) { XP.delay(function () { self.focus(); }); }
+            
+            self.fire('iron-form-element-register');
         },
 
         // LISTENER
